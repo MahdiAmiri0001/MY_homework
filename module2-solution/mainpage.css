@@ -1,0 +1,285 @@
+/* General Reset */
+* {
+    text-decoration: none;
+    color: black;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* First Section */
+
+
+.first_p {
+    width: 100%;
+    height: 15%; /* Changed to auto for responsiveness */
+    background-color: #0b023d;
+    padding: 5px 0;
+    
+}
+#our_word {
+    height: 100%;
+    color: white;
+    padding: 0 5%;
+}
+
+/* Second Section (Login Bar) */
+.second_p {
+    width: 100%;
+    height: auto; /* Changed to auto for responsiveness */
+    display: inline-flex;
+    background-color: #f8f8f8;
+}
+.logo img {
+    width: 150px; /* Reduced size for responsiveness */
+    height: auto;
+    margin-right: 10%;
+}
+#search_bar {
+    width: 70%;
+   align-items: center;
+   margin-left: 5%;
+   margin-right: 5%;
+    
+}
+#search_box {
+    align-items: center;
+    margin-top: 2%;
+    width: 100%; /* Responsive width */
+    height: 40px; /* Adjusted for smaller devices */
+    opacity: 0.9;
+}
+
+#icones {
+    display: flex;
+    gap: 15px;
+}
+
+.icon {
+    width: 40px; /* Adjusted for smaller devices */
+    height: auto;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f8f8;
+    border-bottom: 1px solid gray;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+    padding: 10px 0;
+}
+
+li {
+    font-size: 14px;
+    cursor: pointer;
+}
+
+li:hover {
+    background-color: azure;
+}
+
+/* Announcements Section */
+.anoucios {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.images {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 15px;
+}
+#notas {
+    width: 100%;
+    text-align: center;
+    margin: 5% 0 5% 0;
+}
+#notas > ul {
+    border-bottom: black  solid;
+    border-width: 70%;
+    
+}
+/* Offers Section */
+.ofertas {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px 5%;
+}
+
+.elements {
+    background-color: aliceblue;
+    border-radius: 5%;
+    width: 250px;
+    box-shadow: 5px 5px 15px gray;
+    padding: 10px;
+}
+
+.productos {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 5%;
+}
+
+.percio {
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: left;
+}
+
+.detail {
+    text-align: left;
+    font-size: 0.9rem;
+}
+
+.valor {
+    text-align: right;
+    padding-right: 10px;
+}
+
+input[type="button"] {
+    background-color: white;
+    width: 100%;
+    border-radius: 15px;
+    padding: 5px 10px;
+}
+
+/* Info Section */
+#info {
+   display: inline-flex;
+   gap: 5%;
+   margin: 5% 0 5% 0;
+}
+.puntos{
+    width: 33%;
+    height: auto;
+    display: block;
+}
+.puntos > h3{
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 3%;
+}
+.puntos >p {
+    padding-left: 10px;
+    text-align: justify;
+}
+#last_punto {
+    margin-right: 5%;
+}
+/* Footer Section */
+.contenido {
+background-color: #0b023d;
+padding: 20px;
+width: 100%;
+height: auto;
+}
+.last_p {
+    width: 100%;
+    height: auto;
+    display: inline-flex;
+    gap: 10%;
+}
+.info_adicional{
+    width: 33%;
+    height: auto;
+}
+
+.info_adicional h3,
+.info_adicional p {
+    color: white;
+    margin: 5px 0;
+    
+}
+
+/* Form */
+form {
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+input[type="email"],
+input[type="text"],
+input[type="tel"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Breakpoints */
+@media (max-width: 768px) {
+    #search_box {
+        width: 100%; /* Full width for tablets */
+    }
+
+    .second_p {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    #icones {
+        justify-content: center;
+    }
+
+    .ofertas {
+        gap: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .first_p {
+        padding: 10px 0;
+    }
+
+    .second_p {
+        gap: 10px;
+    }
+
+    .anoucios {
+        flex-direction: column;
+    }
+
+    .elements {
+        width: 100%;
+    }
+}
